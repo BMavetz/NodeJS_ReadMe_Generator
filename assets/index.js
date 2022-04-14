@@ -5,43 +5,67 @@ const fs = require('fs');
 inquirer
   .prompt([
     {
-      type: 'input',
-      name: 'name',
-      message: 'What is your name?',
+      type: 'input', 
+      name: 'title',
+      message: 'What is the project title?'
     },
     {
       type: 'input',
-      name: 'location',
-      message: 'Where are you from?',
+      name: 'description',
+      message: 'Write a brief description of this application:',
     },
     {
       type: 'input',
-      name: 'hobby',
-      message: 'What is your favorite hobby?',
+      name: 'installation',
+      message: 'What are the installation instructions for this application?',
     },
     {
       type: 'input',
-      name: 'food',
-      message: 'What is your favorite food?',
+      name: 'usage',
+      message: 'How is this application used?',
     },
     {
       type: 'input',
-      name: 'github',
-      message: 'Enter your GitHub Username',
+      name: 'contributing',
+      message: 'How would you like others to make contributions to this application?',
     },
     {
       type: 'input',
-      name: 'linkedin',
-      message: 'Enter your LinkedIn URL.',
+      name: 'tests',
+      message: 'What are ways to test the application?',
     },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'Select a license that you would like your project to use:',
+        choices: ['MIT', 'Apache', 'GPL' ],
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'Please enter your github username',
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Please enter your email address',
+    }
   ])
   .then((answers) => {
-    const htmlPageContent = generateHTML(answers);
 
-    fs.writeFile('index.html', htmlPageContent, (err) =>
-      err ? console.log(err) : console.log('Successfully created index.html!')
-    );
-  });
+    console.log(answers);
+    // const HTMLfile = pageCreate(answers);
+    // console.log(HTMLfile);
+    // fs.writeFile('index.html', HTMLfile,(err) => {
+    //     if (err) {
+    //         console.log(err);
+    //     } else {
+    //         console.log("success");
+    //     }
+
+    //  })
+
+    })
 
 
 const questions = [];
