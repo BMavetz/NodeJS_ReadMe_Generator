@@ -81,7 +81,23 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    askPrompt();
+    inquirer
+  .prompt([
+    {
+      type: 'list', 
+      name: 'WriteFile',
+      message: 'Would you like to write the ReadMe file?',
+      choices: ['Yes', 'No' ],
+    },
+]) 
+.then((answers) => {
+    if(answers.WriteFile == 'Yes'){
+        askPrompt();
+    } else{
+        console.log('User does not wish to write to ReadMe file.');
+        return;
+    }
+})
 }
 
 // Function call to initialize app
