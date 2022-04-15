@@ -34,13 +34,13 @@ if(license == 'none'){
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if(license == 'none'){
-    return('');
+    return('This application has no associated license');
   }else if(license == 'MIT'){
-    return('https://opensource.org/licenses/MIT');
+    return('This application is covered under the MIT license');
   }else if(license == 'Apache'){
-    return('https://opensource.org/licenses/Apache-2.0');
+    return('This application is covered under the Apache 2.0 license');
   }else if(license == 'GPL'){
-    return('https://www.gnu.org/licenses/gpl-3.0');
+    return('This application is covered under the GPL 3.0 License');
   }
 }
 
@@ -48,6 +48,8 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   const badge = renderLicenseBadge(data.license);
   const link = renderLicenseLink(data.license);
+  const licenseSection = renderLicenseSection(data.license);
+  console.log(badge, link, licenseSection);
   return `# ${data.title}
 
 `;
