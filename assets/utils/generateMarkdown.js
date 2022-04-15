@@ -51,6 +51,48 @@ function generateMarkdown(data) {
   const licenseSection = renderLicenseSection(data.license);
   console.log(badge, link, licenseSection);
   return `# ${data.title}
+  [![License](${badge})](${link})
+  
+  ## Description
+
+  ${data.description}
+    
+  ## Table of Contents 
+  
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](questions)  
+  
+  ## Installation
+  
+  ${data.installation}
+  
+  ## Usage
+  
+  ${data.usage}
+  
+  ## License
+
+  ${licenseSection}
+  
+  ## Contributing
+
+  ${data.contributing}
+
+  ## Tests
+
+  ${data.tests}
+
+  ## Questions
+
+  To view further applications made by this user, please visit the following github page: ![${data.github}](https://github.com/${data.github})
+  
+  If there are any questions for the user regarding this application, plese feel free to contact them through the following email address: ${data.email}
+ 
+
 
 `;
 }
