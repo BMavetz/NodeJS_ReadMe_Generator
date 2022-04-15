@@ -57,17 +57,6 @@ inquirer
 
     console.log(answers);
     writeToFile(generateMarkdown, answers);
-    // const HTMLfile = pageCreate(answers);
-    // console.log(HTMLfile);
-    // fs.writeFile('index.html', HTMLfile,(err) => {
-    //     if (err) {
-    //         console.log(err);
-    //     } else {
-    //         console.log("success");
-    //     }
-
-    //  })
-
     })
 };
 

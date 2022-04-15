@@ -73,6 +73,8 @@ function generateMarkdown(data) {
   ## Usage
   
   ${data.usage}
+
+  See a Walkthrough video here: https://drive.google.com/file/d/1adttKJ_xYsvKiF-r48OEieZe9wdIOtsA/view
   
   ## License
 
