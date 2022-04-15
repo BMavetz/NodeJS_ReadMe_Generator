@@ -40,7 +40,7 @@ inquirer
         type: 'list',
         name: 'license',
         message: 'Select a license that you would like your project to use:',
-        choices: ['MIT', 'Apache', 'GPL' ],
+        choices: ['None','MIT', 'Apache', 'GPL' ],
     },
     {
         type: 'input',
