@@ -88,7 +88,7 @@ function generateMarkdown(data) {
 
   ## Questions
 
-  To view further applications made by this user, please visit the following github page: ![${data.github}](https://github.com/${data.github})
+  To view further applications made by this user, please visit the following github page: [${data.github}](https://github.com/${data.github})
   
   If there are any questions for the user regarding this application, plese feel free to contact them through the following email address: ${data.email}
  

@@ -1,0 +1,23 @@
+{
+  "name": "static-site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^6.5.2"
+  },
+  "keywords": [],
+  "description": "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BMavetz/NodeJS_ReadMe_Generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BMavetz/NodeJS_ReadMe_Generator/issues"
+  },
+  "homepage": "https://github.com/BMavetz/NodeJS_ReadMe_Generator#readme"
+}
